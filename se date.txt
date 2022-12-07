@@ -1,0 +1,105 @@
+
+var d = new Date(inp);
+var z= new Date();
+m = d.getMonth(); //current month
+
+y = d.getFullYear(); //current year
+x = new Date(y,m-1,1); //this is first day of current month
+
+var zm= 0;
+var zy=0;
+var zd=0;
+switch (m){
+    case 0:
+        zm = m-1;
+        zy = y;
+        zd = 31;
+        z= new Date(zy,zm,zd);
+        break;
+        
+    case 2:
+        if (y%4==0){
+            zm = m-1;
+            zy = y;
+            zd = 29;
+            z= new Date(zy,zm,zd);
+            break;
+        }
+        else{
+            zm = m-1;
+            zy = y;
+            zd = 28;
+            z= new Date(zy,zm,zd);
+            break;
+        }
+        
+    
+    case 1:
+        zm = m-1;
+        zy = y;
+        zd = 31;
+        z= new Date(zy,zm,zd); 
+        break;
+    
+    case 3:
+        zm = m-1;
+        zy = y;
+        zd = 31;
+        z= new Date(zy,zm,zd);
+        break;
+        
+    case 4:
+        zm = m-1;
+        zy = y;
+        zd = 30;
+        z= new Date(zy,zm,zd);
+        break;
+    case 5:
+        zm = m-1;
+        zy = y;
+        zd = 31;
+        z= new Date(zy,zm,zd);
+        break;
+    
+    case 6:
+        zm = m-1;
+        zy = y;
+        zd = 30;
+        z= new Date(zy,zm,zd);
+        break;
+        
+    case 7:
+        zm = m-1;
+        zy = y;
+        zd = 31;
+        z= new Date(zy,zm,zd);
+        break;
+        
+    case 8:
+        zm = m-1;
+        zy = y;
+        zd = 31;
+        z= new Date(zy,zm,zd);
+        break;
+        
+    case 9:
+        zm = m-1;
+        zy = y;
+        zd = 30;
+        z= new Date(zy,zm,zd);
+        break;
+        
+    case 10:
+        zm = m-1;
+        zy = y;
+        zd = 31;
+        z= new Date(zy,zm,zd);
+        break;
+        
+    case 11:
+        zm = m-1;
+        zy = y;
+        zd = 30;
+        z= new Date(zy,zm,zd);
+        break;
+}
